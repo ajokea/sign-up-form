@@ -66,8 +66,20 @@ a:link ,a:link:visited {
     flex: 1 1 calc(100vh / 3);
 }
 
-span {
+.right-hand-side > div:first-child span {
     font-style: italic;
+}
+
+.right-hand-side > div:first-child p:first-child{
+    padding-top: 16vh;
+    padding-bottom: 2vh;
+}
+
+.right-hand-side > div:first-child p {
+    padding-left: 2.5vw;
+    padding-right: 140px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 form {
@@ -121,4 +133,30 @@ input:focus {
 .right-hand-side > div:nth-child(2) > p {
     padding-left: 2.5vw;
     padding-bottom: 2.5vh;
+}
+
+button {
+    background-color: #596D48;
+    color: #E5E7EB;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 45px;
+    border: none;
+    border-radius: 4px;
+}
+
+.right-hand-side > div:last-child {
+    padding-left: 2.5vw;
+    padding-top: 3.5vh;
+}
+
+.right-hand-side > div:last-child > p {
+    padding-top: 2.5vh;
+    font-size: 14px;
+}
+
+.right-hand-side > div:last-child span {
+    color: #596D48;
+    font-weight: 600;
 }
