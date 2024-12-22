@@ -58,8 +58,67 @@ a:link ,a:link:visited {
     flex-basis: 65vw;
     display: flex;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeeee;
 }
 
-.right-hand-side div {
-    flex:1 1 33vh;
+.right-hand-side > div:nth-child(2n - 1) {
+    flex: 1 1 calc(100vh / 3);
+}
+
+span {
+    font-style: italic;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 25vw;
+    font-size: 10px;
+    font-weight: 700;
+    color: #666565;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2.5vw;
+    padding-bottom: 2vh;
+}
+
+input {
+    height: 2.5vh;
+    width: 15vw;
+    border:0.1px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgb(78, 78, 250);
+    border-width: 1px;
+    box-shadow: 2px 2px #E5E7EB;
+}
+
+#password:invalid, #confirm-password:invalid {
+    outline: none;
+    border-color: red;
+    border-width: 1px;
+    box-shadow: none;
+}
+
+.right-hand-side > div:nth-child(2) {
+    background-color: white;
+    font-size: 20px;
+    font-weight: 550;
+    color: #363333;
+    padding-top: 2.5vh;
+    padding-bottom: 3vh;
+    box-shadow: 0 4px 5px #E5E7EB;
+}
+
+.right-hand-side > div:nth-child(2) > p {
+    padding-left: 2.5vw;
+    padding-bottom: 2.5vh;
 }
