@@ -71,7 +71,7 @@ a:link ,a:link:visited {
 }
 
 .right-hand-side > div:first-child p:first-child{
-    padding-top: 16vh;
+    padding-top: 19vh;
     padding-bottom: 2vh;
 }
 
@@ -79,7 +79,7 @@ a:link ,a:link:visited {
     padding-left: 2.5vw;
     padding-right: 140px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 form {
@@ -113,11 +113,15 @@ input:focus {
     box-shadow: 2px 2px #E5E7EB;
 }
 
-#password:invalid, #confirm-password:invalid {
+#password:invalid, #confirm-password:invalid, #password.invalid, #confirm-password.invalid{
     outline: none;
-    border-color: red;
+    border-color: rgb(216, 51, 51);
     border-width: 1px;
     box-shadow: none;
+}
+
+#password-error {
+    color: rgb(216, 51, 51);
 }
 
 .right-hand-side > div:nth-child(2) {
